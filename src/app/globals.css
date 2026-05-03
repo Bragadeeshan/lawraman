@@ -1,0 +1,122 @@
+/* ─── Reset ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── CSS Variables ──────────────────────────────────── */
+:root {
+  /* Colors */
+  --green:        #41ab5d;
+  --green-dark:   #2d8a45;
+  --green-mid:    #a1d99b;
+  --green-light:  #e3f3df;
+  --black:        #111111;
+  --off-white:    #f8f9f6;
+  --white:        #ffffff;
+  --gray:         #6b7280;
+  --gray-light:   #e8ebe6;
+  --border-color: #d4e4d0;
+
+  /* Fonts */
+  --font-heading: var(--font-cormorant), 'Cormorant Garamond', serif;
+  --font-body:    var(--font-dm-sans), 'DM Sans', sans-serif;
+
+  /* Layout */
+  --nav-height:        64px;
+  --section-padding-y: 96px;
+  --section-padding-x: 56px;
+  --content-max-width: 1320px;
+  --card-padding:      40px 32px;
+
+  /* Gaps */
+  --gap-sm:  8px;
+  --gap-md:  16px;
+  --gap-lg:  24px;
+  --gap-xl:  32px;
+  --gap-2xl: 48px;
+  --gap-3xl: 80px;
+
+  /* Border radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* Transitions */
+  --ease: 0.22s ease;
+}
+
+/* ─── Mobile overrides ───────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    --nav-height:        56px;
+    --section-padding-y: 64px;
+    --section-padding-x: 24px;
+  }
+}
+
+/* ─── Base ───────────────────────────────────────────── */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

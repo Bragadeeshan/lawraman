@@ -1,0 +1,150 @@
+.section {
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.bgOffWhite {
+  background: var(--off-white);
+}
+
+.bgWhite {
+  background: var(--white);
+}
+
+/* ─── Layout grid ───────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.gridSingle {
+  grid-template-columns: 1fr;
+  max-width: 720px;
+}
+
+/* ─── Left column ───────────────────────────────────── */
+.heading {
+  font-family: var(--font-heading);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.1;
+  max-width: 440px;
+  margin-bottom: var(--gap-2xl);
+  letter-spacing: -0.01em;
+}
+
+/* ─── Pillars ───────────────────────────────────────── */
+.pillars {
+  display: flex;
+  flex-direction: column;
+}
+
+.pillar {
+  display: flex;
+  gap: 20px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border-color);
+  align-items: flex-start;
+  transition: background var(--ease);
+}
+
+.pillar:first-child {
+  border-top: 1px solid var(--border-color);
+}
+
+.dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+.pillarTitle {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.pillarDesc {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+/* ─── Right column — dark quote block ───────────────── */
+.right {
+  position: sticky;
+  top: calc(var(--nav-height) + 48px);
+}
+
+.quoteBlock {
+  background: var(--black);
+  padding: 56px 52px;
+  border-radius: var(--radius-md);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle green accent line on left edge */
+.quoteBlock::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--green);
+}
+
+.quoteSymbol {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 96px;
+  color: var(--green);
+  line-height: 0.7;
+  margin-bottom: 28px;
+  opacity: 0.7;
+}
+
+.quoteText {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--white);
+  line-height: 1.6;
+}
+
+/* ─── Responsive ────────────────────────────────────── */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--gap-2xl);
+  }
+
+  .right {
+    position: static;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .quoteBlock {
+    padding: 36px 28px;
+  }
+
+  .quoteText {
+    font-size: 20px;
+  }
+}

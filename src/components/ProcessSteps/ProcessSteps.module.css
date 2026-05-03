@@ -1,0 +1,108 @@
+.section {
+  background: var(--white);
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.header {
+  margin-bottom: 72px;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.1;
+  max-width: 480px;
+  letter-spacing: -0.01em;
+}
+
+/* ─── Steps grid ────────────────────────────────────── */
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.step {
+  padding-right: var(--gap-xl);
+}
+
+.step:last-child {
+  padding-right: 0;
+}
+
+/* ─── Decorative number ─────────────────────────────── */
+.number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 56px;
+  font-weight: 400;
+  /* Use a slightly more visible tint — not full green-light, not invisible */
+  color: #c8e8c0;
+  line-height: 1;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+/* ─── Connector row ─────────────────────────────────── */
+.connector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba(65, 171, 93, 0.18);
+}
+
+.line {
+  display: block;
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+  margin-right: calc(-1 * var(--gap-xl));
+}
+
+/* ─── Step text ─────────────────────────────────────── */
+.title {
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--gray);
+}
+
+/* ─── Responsive ────────────────────────────────────── */
+@media (max-width: 768px) {
+  .stepsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--gap-xl);
+  }
+
+  .step {
+    padding-right: 0;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+}

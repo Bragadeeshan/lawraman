@@ -1,0 +1,147 @@
+/* ═══════════════════════════════════════════════════════
+   ABOUT PAGE
+   Section order: black / white / off-white / white / green / black
+   ═══════════════════════════════════════════════════════ */
+
+/* ─── 2. Company story ──────────────────────────────── */
+.story {
+  background: var(--white);
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-3xl);
+  align-items: start;
+}
+
+.storyHeading {
+  font-family: var(--font-heading);
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.15;
+  max-width: 440px;
+  margin-bottom: var(--gap-xl);
+}
+
+.storyBody {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: var(--gap-lg);
+}
+
+.storyBody:last-child {
+  margin-bottom: 0;
+}
+
+/* Image placeholder */
+.storyImage {
+  position: sticky;
+  top: calc(var(--nav-height) + 48px);
+  aspect-ratio: 4 / 5;
+  background: var(--green-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
+}
+
+.placeholderLabel {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--border-color);
+}
+
+/* ─── 3. Mission and values ─────────────────────────── */
+.values {
+  background: var(--off-white);
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.valuesHeader {
+  margin-bottom: var(--gap-3xl);
+}
+
+.valuesHeading {
+  font-family: var(--font-heading);
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.15;
+  max-width: 480px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border-color);
+  border: 1px solid var(--border-color);
+}
+
+.valueCard {
+  background: var(--white);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.valueNumber {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--green-light);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.valueTitle {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.valueDesc {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--gray);
+  flex: 1;
+}
+
+/* ─── Responsive ────────────────────────────────────── */
+@media (max-width: 768px) {
+  .storyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .storyImage {
+    position: static;
+    aspect-ratio: 3 / 2;
+  }
+
+  .storyHeading {
+    font-size: 32px;
+  }
+
+  .valuesHeading {
+    font-size: 32px;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,158 @@
+/* ═══════════════════════════════════════════════════════
+   SERVICES PAGE
+   Section order: black / white / off-white / green-light / green / black
+   ═══════════════════════════════════════════════════════ */
+
+/* ─── Service section shell ─────────────────────────── */
+.serviceSection {
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+/* Background variants */
+.bgWhite {
+  background: var(--white);
+}
+
+.bgOffWhite {
+  background: var(--off-white);
+}
+
+.bgGreenLight {
+  background: var(--green-light);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* ─── Two-column grid ───────────────────────────────── */
+.serviceGrid {
+  display: grid;
+  /* text col slightly wider than image col */
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--gap-3xl);
+  align-items: center;
+}
+
+/* Alternating: image first, text second */
+.serviceGridAlt {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.serviceGridAlt .serviceContent {
+  order: 2;
+}
+
+.serviceGridAlt .serviceImage {
+  order: 1;
+}
+
+/* ─── Text column ───────────────────────────────────── */
+.serviceTitle {
+  font-family: var(--font-heading);
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.15;
+  max-width: 520px;
+  margin-bottom: var(--gap-lg);
+}
+
+.serviceDesc {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: var(--gap-2xl);
+  max-width: 520px;
+}
+
+/* Inclusions list */
+.inclusionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-top: 1px solid var(--border-color);
+  padding-top: var(--gap-xl);
+}
+
+.inclusionsItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1.5;
+}
+
+.inclusionDot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+/* ─── Image placeholder column ──────────────────────── */
+.serviceImage {
+  aspect-ratio: 3 / 4;
+  background: var(--border-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 24px;
+}
+
+/* On green-light bg, give image a slightly different tint */
+.bgGreenLight .serviceImage {
+  background: rgba(212, 228, 208, 0.6);
+  border: 1px solid var(--border-color);
+}
+
+.placeholderLabel {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.bgGreenLight .placeholderLabel {
+  color: var(--gray);
+  opacity: 0.5;
+}
+
+/* ─── Responsive ────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .serviceTitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .serviceGrid,
+  .serviceGridAlt {
+    grid-template-columns: 1fr;
+  }
+
+  .serviceGridAlt .serviceContent {
+    order: 1;
+  }
+
+  .serviceGridAlt .serviceImage {
+    order: 2;
+  }
+
+  .serviceImage {
+    aspect-ratio: 16 / 9;
+  }
+
+  .serviceTitle {
+    font-size: 28px;
+  }
+}
