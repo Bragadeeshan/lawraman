@@ -1,6 +1,6 @@
 .footer {
   background: var(--black);
-  padding: 64px var(--section-padding-x) 32px;
+  padding: 48px var(--section-padding-x) 32px;
 }
 
 /* ─── Main grid ─────────────────────────────────────── */

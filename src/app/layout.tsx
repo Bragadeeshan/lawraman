@@ -20,7 +20,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Lawraman Pvt Ltd — Investment Process Consultancy & Coordination',
+  title: 'Lawraman Pvt Ltd - Investment Process Consultancy & Coordination',
   description:
     'Lawraman Pvt Ltd provides end-to-end investment process consultancy, environmental engineering, and civil engineering consultancy services in Sri Lanka.',
 }

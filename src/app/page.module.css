@@ -7,7 +7,7 @@
 /* ─── 1. Hero ───────────────────────────────────────── */
 .hero {
   background: var(--black);
-  padding: 108px var(--section-padding-x) 0;
+  padding: 81px var(--section-padding-x) 0;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -18,7 +18,7 @@
   position: relative;
   z-index: 1;
   max-width: 760px;
-  padding-bottom: 88px;
+  padding-bottom: 66px;
 }
 
 .heroHeading {
@@ -165,6 +165,16 @@
   line-height: 1.45;
   max-width: 880px;
   letter-spacing: -0.01em;
+  margin-bottom: 16px;
+}
+
+.introSub {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray);
+  line-height: 1.65;
+  max-width: 640px;
 }
 
 /* ─── 3. Services ───────────────────────────────────── */

@@ -26,9 +26,9 @@
   --font-body:    var(--font-dm-sans), 'DM Sans', sans-serif;
 
   /* Layout */
-  --nav-height:        64px;
-  --section-padding-y: 96px;
-  --section-padding-x: 56px;
+  --nav-height:        68px;
+  --section-padding-y: 64px;
+  --section-padding-x: 48px;
   --content-max-width: 1320px;
   --card-padding:      40px 32px;
 

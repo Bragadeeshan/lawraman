@@ -75,7 +75,7 @@ export default function ContactPage() {
       <section className={styles.contact} aria-label="Contact information and form">
         <div className={styles.contactGrid}>
 
-          {/* Left — form */}
+          {/* Left - form */}
           <div className={styles.formCol}>
             <SectionLabel text="Send us a message" />
             <h2 className={styles.formHeading}>Let&rsquo;s talk about your project</h2>
@@ -86,7 +86,7 @@ export default function ContactPage() {
             <ContactForm />
           </div>
 
-          {/* Right — contact details */}
+          {/* Right - contact details */}
           <div className={styles.detailsCol}>
             <SectionLabel text="Contact details" />
             <h2 className={styles.detailsHeading}>Reach us directly</h2>
@@ -143,12 +143,12 @@ export default function ContactPage() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Lawraman Pvt Ltd — Kurunegala, Sri Lanka"
+            title="Lawraman Pvt Ltd - Kurunegala, Sri Lanka"
           />
         */}
         <div className={styles.mapPlaceholder} aria-hidden="true">
           <span className={styles.mapPlaceholderLabel}>
-            Google Maps — Kurunegala, Sri Lanka
+            Google Maps - Kurunegala, Sri Lanka
           </span>
         </div>
       </section>

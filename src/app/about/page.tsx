@@ -14,7 +14,7 @@ const pillars = [
   {
     title: 'Technical and environmental know-how',
     description:
-      'Civil and environmental engineering expertise that goes beyond advice — we understand the technical realities on the ground.',
+      'Civil and environmental engineering expertise that goes beyond advice - we understand the technical realities on the ground.',
   },
   {
     title: 'End-to-end coordination',
@@ -33,19 +33,19 @@ const values = [
     number: '01',
     title: 'Our mission',
     description:
-      'To coordinate Sri Lanka\'s investment process with expertise, integrity, and end-to-end accountability — turning complex regulatory landscapes into clear paths forward.',
+      'To coordinate Sri Lanka\'s investment process with expertise, integrity, and end-to-end accountability - turning complex regulatory landscapes into clear paths forward.',
   },
   {
     number: '02',
     title: 'Our vision',
     description:
-      'To be Sri Lanka\'s most trusted investment process partner — known for transparent counsel, technical depth, and measurable outcomes for every client.',
+      'To be Sri Lanka\'s most trusted investment process partner - known for transparent counsel, technical depth, and measurable outcomes for every client.',
   },
   {
     number: '03',
     title: 'Our values',
     description:
-      'Integrity, expertise, transparency, and partnership. These aren\'t aspirations — they\'re the standards every member of our team is held to on every engagement.',
+      'Integrity, expertise, transparency, and partnership. These aren\'t aspirations - they\'re the standards every member of our team is held to on every engagement.',
   },
 ]
 
@@ -56,7 +56,7 @@ export default function AboutPage() {
       <HeroSection
         label="About us"
         title="Driven by expertise. Guided by integrity."
-        subtitle="Lawraman Pvt Ltd is Sri Lanka's investment process consultancy — coordinating regulatory, environmental, and civil expertise under one roof."
+        subtitle="Lawraman Pvt Ltd is Sri Lanka's investment process consultancy - coordinating regulatory, environmental, and civil expertise under one roof."
         subtle
       />
 
@@ -70,7 +70,7 @@ export default function AboutPage() {
             </h2>
             <p className={styles.storyBody}>
               Lawraman Pvt Ltd was established to bridge a critical gap in Sri Lanka&rsquo;s
-              investment landscape — the coordination gap. Too many promising investments
+              investment landscape - the coordination gap. Too many promising investments
               stall not because of a lack of capital or intent, but because of the
               complexity of navigating regulatory processes, environmental requirements,
               and civil approvals simultaneously.
@@ -79,18 +79,18 @@ export default function AboutPage() {
               Based in Kurunegala, we work with investors across Sri Lanka&rsquo;s key growth
               sectors: manufacturing, commercial development, and industrial projects.
               Our team brings together investment process expertise, environmental
-              engineering, and civil consultancy — so your investment moves forward
+              engineering, and civil consultancy - so your investment moves forward
               without being held back by process.
             </p>
             <p className={styles.storyBody}>
               What distinguishes us is not just what we know, but how we work. We
               don&rsquo;t hand over a report and step back. We coordinate, manage, and stay
-              accountable through every stage — from the first feasibility assessment
+              accountable through every stage - from the first feasibility assessment
               to the final approval.
             </p>
           </div>
 
-          {/* Image placeholder — replace with <Image> when asset is ready */}
+          {/* Image placeholder - replace with <Image> when asset is ready */}
           <div className={styles.storyImage} aria-hidden="true">
             <span className={styles.placeholderLabel}>
               Company / team photo

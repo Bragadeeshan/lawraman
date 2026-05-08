@@ -4,7 +4,7 @@
 }
 
 .header {
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 
 .heading {
@@ -37,8 +37,7 @@
   font-family: var(--font-heading);
   font-size: 56px;
   font-weight: 400;
-  /* Use a slightly more visible tint — not full green-light, not invisible */
-  color: #c8e8c0;
+  color: var(--green-mid);
   line-height: 1;
   margin-bottom: 20px;
   letter-spacing: -0.02em;

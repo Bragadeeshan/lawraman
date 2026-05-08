@@ -44,7 +44,7 @@
 .pillar {
   display: flex;
   gap: 20px;
-  padding: 28px 0;
+  padding: 20px 0;
   border-bottom: 1px solid var(--border-color);
   align-items: flex-start;
   transition: background var(--ease);

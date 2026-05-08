@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════
    ABOUT PAGE
-   Section order: black / white / off-white / white / green / black
+   Section order: black / white / off-white / green-light / white / green / black
    ═══════════════════════════════════════════════════════ */
 
 /* ─── 2. Company story ──────────────────────────────── */
@@ -63,7 +63,7 @@
 
 /* ─── 3. Mission and values ─────────────────────────── */
 .values {
-  background: var(--off-white);
+  background: var(--green-light);
   padding: var(--section-padding-y) var(--section-padding-x);
 }
 

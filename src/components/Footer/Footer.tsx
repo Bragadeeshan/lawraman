@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer} aria-label="Site footer">
       <div className={styles.grid}>
-        {/* Col 1 — Brand */}
+        {/* Col 1 - Brand */}
         <div className={styles.brand}>
           <Link href="/" className={styles.footerLogo}>
             <ClientImage
@@ -45,7 +45,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Col 2 — Services */}
+        {/* Col 2 - Services */}
         <div className={styles.col}>
           <p className={styles.colLabel}>Services</p>
           <ul className={styles.colLinks}>
@@ -59,7 +59,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Col 3 — Company */}
+        {/* Col 3 - Company */}
         <div className={styles.col}>
           <p className={styles.colLabel}>Company</p>
           <ul className={styles.colLinks}>

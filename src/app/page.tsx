@@ -47,7 +47,7 @@ const services = [
     number: '01',
     title: 'Investment Process Consultancy & Project Management',
     description:
-      'End-to-end guidance through Sri Lanka\'s investment landscape — from feasibility and regulatory navigation to project coordination and approval management.',
+      'End-to-end guidance through Sri Lanka\'s investment landscape - from feasibility and regulatory navigation to project coordination and approval management.',
     href: '/services#investment',
     icon: <InvestmentIcon />,
   },
@@ -55,7 +55,7 @@ const services = [
     number: '02',
     title: 'Environmental Engineering Consultancy',
     description:
-      'Expert assessment and solutions for solid waste disposal, wastewater treatment, and environmental compliance — aligned with Sri Lankan regulatory standards.',
+      'Expert assessment and solutions for solid waste disposal, wastewater treatment, and environmental compliance - aligned with Sri Lankan regulatory standards.',
     href: '/services#environmental',
     icon: <EnvironmentalIcon />,
   },
@@ -63,7 +63,7 @@ const services = [
     number: '03',
     title: 'Civil Engineering Project Consultancy',
     description:
-      'Technical consultancy for civil infrastructure — supporting manufacturing facilities, commercial developments, and industrial projects from design to delivery.',
+      'Technical consultancy for civil infrastructure - supporting manufacturing facilities, commercial developments, and industrial projects from design to delivery.',
     href: '/services#civil',
     icon: <CivilIcon />,
   },
@@ -78,7 +78,7 @@ const pillars = [
   {
     title: 'Technical and environmental know-how',
     description:
-      'Civil and environmental engineering expertise that goes beyond advice — we understand the technical realities on the ground.',
+      'Civil and environmental engineering expertise that goes beyond advice - we understand the technical realities on the ground.',
   },
   {
     title: 'End-to-end coordination',
@@ -119,7 +119,7 @@ const processSteps = [
   },
 ]
 
-/* Placeholder client logo slots — replace with real logos */
+/* Placeholder client logo slots - replace with real logos */
 const clientSlots = [1, 2, 3, 4, 5, 6]
 
 /* ─── Page ──────────────────────────────────────────── */
@@ -138,7 +138,7 @@ export default function HomePage() {
           </h1>
           <p className={styles.heroSub}>
             End-to-end consultancy for investors navigating Sri Lanka&rsquo;s
-            regulatory, environmental, and civil landscape — from feasibility
+            regulatory, environmental, and civil landscape - from feasibility
             to final approval.
           </p>
           <div className={styles.heroButtons}>
@@ -165,7 +165,11 @@ export default function HomePage() {
       <section className={styles.introBand} aria-label="Our commitment">
         <p className={styles.introText}>
           We coordinate your investment journey from feasibility to final
-          approval — across regulatory, environmental, and civil disciplines.
+          approval - across regulatory, environmental, and civil disciplines.
+        </p>
+        <p className={styles.introSub}>
+          Trusted by manufacturers, developers, and investors across Sri Lanka
+          since our founding in Kurunegala.
         </p>
       </section>
 
@@ -180,7 +184,7 @@ export default function HomePage() {
           </div>
           <p className={styles.servicesSub}>
             Lawraman brings together investment process expertise, environmental
-            engineering, and civil consultancy under one roof — so your project
+            engineering, and civil consultancy under one roof - so your project
             moves forward without gaps.
           </p>
         </div>
@@ -195,7 +199,7 @@ export default function HomePage() {
       <WhyUs
         heading="Why investors choose Lawraman"
         pillars={pillars}
-        quoteText="We don't simply advise — we coordinate, manage and see your investment through from first consultation to final approval."
+        quoteText="We don't simply advise - we coordinate, manage and see your investment through from first consultation to final approval."
       />
 
       {/* 5 ─ How We Work */}
@@ -209,7 +213,7 @@ export default function HomePage() {
             Trusted by investors across Sri Lanka
           </h2>
         </div>
-        {/* Logo strip — replace placeholders with <Image> when assets are ready */}
+        {/* Logo strip - replace placeholders with <Image> when assets are ready */}
         <div className={styles.logoStrip} aria-label="Client logos">
           {clientSlots.map((n) => (
             <div key={n} className={styles.logoPlaceholder} aria-hidden="true" />
